@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>Users Data</h1>
+            <ul>
+                <li><img src="./assets/home.png" alt=""> Dashboard </li>
+                <li><img src="./assets/bar-chart.png" alt=""> Overview</li>
+                <li><img src="./assets/group.png" alt=""> Costumers</li>
+                <li><img src="./assets/folder.png" alt=""> Files</li>
+                <li><img src="./assets/chat.png" alt=""> Messages</li>
+                <li><img src="./assets/notification.png" alt=""> Noticifications</li>
+            </ul>
+        </nav>
+        <section class="content">
+            <div class="header">
+                <p>
+                List of Users
+                
+                <select id="filters">
+                    <option value="" selected disabled>Add Filter  + </option>
+                    <option value="ageAsc">Sort By Age (ascending)</option>
+                    <option value="ageDesc">Sort By Age (descending)</option>
+                    <option value="bbAsc">Sort By Bank Balance (ascending)</option>
+                    <option value="bbDesc">Sort By Bank Balance (descending)</option>
+                </select>
+                </p>
+                <form id="searchForm">
+                    <input type="text" id="searchBar" placeholder="Search in table" required>
+                    <button><img src="./assets/search.png" alt=""></button>
+                </form>
+                
+            </div>
+            <hr>
+            <div class="users">
+                <table></table>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
